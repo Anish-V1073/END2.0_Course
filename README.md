@@ -19,10 +19,10 @@ Browse the location of Inno Setup compiler directory(C:\Program Files (x86)\Inno
 ### Building DataTracePro
 Clone the [dt-installer-v1311](https://github.com/MesaLabs/DataTrace-Pro/tree/dt-installer-v1311) branch.
 Place the following files to the respective directory.
-* SQLEXPR_x64_ENU.exe -> DataTrace-Pro\Src\3rd Party\SQL_Express\
-* dotnetfx35.exe -> DataTrace-Pro\Src\3rd Party\NET_Framework\
+* **SQLEXPR_x64_ENU.exe** -> DataTrace-Pro\Src\3rd Party\SQL_Express\
+* **dotnetfx35.exe** -> DataTrace-Pro\Src\3rd Party\NET_Framework\
 
 Run the Adobe reader installer and pause the installation once extraction of the files is completed. Copy the files from "C:\Users\AppData\Local\Adobe\Reader 9.0\Setup Files\READER9\" to "DataTrace-Pro\Src\3rd Party\Adobe\" terminate the adobe reader installer.
 
-Open DataTracePro.iss file with Inno-script studio and compile the script.
+Open **DataTracePro.iss** file with Inno-script studio and compile the script.
 
