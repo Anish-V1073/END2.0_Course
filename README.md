@@ -21,5 +21,5 @@ The learning rate controls how quickly the model is adapted to the problem. A sm
    
   Gradient<sub>i</sub> = GradientInside × GradientContribution<sub>i</sub> <!--∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1 -->  
    
-  <img align="center" src="https://render.githubusercontent.com/render/math?math=\frac{\partial _{Output}}{\partial _{w^i}} = \frac{\partial _{Contribution^i}}{\partial _{w^i}}    X \frac{\partial _{Output}}{\partial _{Contribution^i}} ">
+  <img align="center" src="https://render.githubusercontent.com/render/math?math=\frac{\partial _{Output}}{\partial _{w^i}} = \frac{\partial _{Contribution^i}}{\partial _{w^i}}    \times \frac{\partial _{Output}}{\partial _{Contribution^i}} ">
    
