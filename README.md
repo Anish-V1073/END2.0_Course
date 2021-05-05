@@ -18,9 +18,9 @@ The learning rate controls how quickly the model is adapted to the problem. A sm
   
   Mathematically total output gradient is the total gradient caused by the all the neurons which are contributed for a output:  
     
-   FinalGradient = GradientContribution**1** + GradientContribution**2**+ GradientContribution**N**      
-   Gradient<sub>i</sub>=GradientInside×GradientContribution<sub>i</sub>
+   FinalGradient = GradientContribution**1** + GradientContribution**2**+ GradientContribution**N**
    
-   or
+   Gradient<sub>i</sub>=GradientInside×GradientContribution<sub>i</sub> <!--∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1 -->  
    
-   ∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1
+   <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial _{Output}}{\partial _{w^i}} = \frac{\partial _{Contribution^i}}{\partial _{w^i}}  \frac{\partial _{Output}}{\partial _{Contribution^i}} ">
+   
