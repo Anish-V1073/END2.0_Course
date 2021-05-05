@@ -16,9 +16,9 @@ The learning rate controls how quickly the model is adapted to the problem. A sm
 ### What is "chain rule" in gradient flow?
   The algorithm used to update the model parameters(weights, biases) in order to effectively train a neural network is known as chain rule.
   
-  Mathematically total output gradient is the total gradient caused by the all the neurons which are contributed for a output:
-  
-    FinalGradient = GradientContribution**1** + GradientContribution**2**+ GradientContribution**N**       
-    Gradient1=GradientInside×GradientContribution1 
-    or
-    ∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1
+  Mathematically total output gradient is the total gradient caused by the all the neurons which are contributed for a output:  
+    
+   FinalGradient = GradientContribution**1** + GradientContribution**2**+ GradientContribution**N**      
+   Gradient1=GradientInside×GradientContribution1 
+   or
+   ∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1
