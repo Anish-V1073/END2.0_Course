@@ -14,13 +14,12 @@ The learning rate controls how quickly the model is adapted to the problem. A sm
   "Loss" is nothing but a prediction error. This is the difference between the expected output and predicted output.
 
 ### What is "chain rule" in gradient flow?
-  The algorithm used to update the model parameters(weights, biases) in order to effectively train a neural network is known as chain rule.
-  
+  The algorithm used to update the model parameters(weights, biases) in order to effectively train a neural network is known as chain rule.  
   Mathematically total output gradient is the total gradient caused by the all the neurons which are contributed for a output:  
     
-   FinalGradient = GradientContribution**1** + GradientContribution**2**+ GradientContribution**N**
+  FinalGradient = GradientContribution**1** + GradientContribution**2**+ GradientContribution**N**
    
-   Gradient<sub>i</sub>=GradientInside×GradientContribution<sub>i</sub> <!--∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1 -->  
+  Gradient<sub>i</sub>=GradientInside×GradientContribution<sub>i</sub> <!--∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1 -->  
    
-   <img src="https://render.githubusercontent.com/render/math?math=\frac{\partial _{Output}}{\partial _{w^i}} = \frac{\partial _{Contribution^i}}{\partial _{w^i}}  \frac{\partial _{Output}}{\partial _{Contribution^i}} ">
+  <img align="center" src="https://render.githubusercontent.com/render/math?math=\frac{\partial _{Output}}{\partial _{w^i}} = \frac{\partial _{Contribution^i}}{\partial _{w^i}}   \frac{\partial _{Output}}{\partial _{Contribution^i}} ">
    
