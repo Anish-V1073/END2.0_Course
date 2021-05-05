@@ -1,28 +1,24 @@
-## Getting Started
+## Scope
 
-Please follow the instructions to Build the DataTracePro installer application.
+Please find the answers for the assignment 1 of END2.0 course's questions in the below sections.
 
-### Prerequisites
+### What is a neural network neuron?
+  Neuron is a mathematical operation takes the input and multiply by it's weight and passes the sum to another neuron via activation function.
 
-To build DataTracePro installer application following things are needed.
-* [Inno setup Compiler](https://jrsoftware.org/download.php/is.exe)
-* [Inno Script Studio](https://www.kymoto.org/downloads/ISStudio_Latest.exe)
-* [Microsoft® SQL Server® 2014 Express ](https://www.microsoft.com/en-in/download/details.aspx?id=42299)
-* [.NET Framework 3.5](https://www.microsoft.com/en-us/Download/confirmation.aspx?id=25150)
-* [Adobe Reader 9.0](http://software.oldversion.com/windows/download/acrobat-reader-9-0)
+### What is the use of the learning rate?
+The learning rate is a configurable hyperparameter used in the training of neural networks that has a small positive value.
 
-### Installing
+The learning rate controls how quickly the model is adapted to the problem. A smaller learning rate requires many updates before reaching the minimum point. Too large of a learning rate causes drastic updates which lead to divergent behaviors. So it is always important to choose optimal learning rate swiftly reaches the minimum point.
 
-First Install Inno setup and then Inno-script-studio. Open the Inno-script-studio. Click on Tools->Options->Compiler Settings. 
-Browse the location of Inno Setup compiler directory(C:\Program Files (x86)\Inno Setup 6).
+### What is "loss" in neural network?
+  "Loss" is nothing but a prediction error. This is the difference between the expected output and predicted output.
 
-### Building DataTracePro
-Clone the [dt-installer-v1311](https://github.com/MesaLabs/DataTrace-Pro/tree/dt-installer-v1311) branch.
-Place the following files to the respective directory.
-* **SQLEXPR_x64_ENU.exe** -> DataTrace-Pro\Src\3rd Party\SQL_Express\
-* **dotnetfx35.exe** -> DataTrace-Pro\Src\3rd Party\NET_Framework\
-
-Run the Adobe reader installer and pause the installation once extraction of the files is completed. Copy the files from "C:\Users\AppData\Local\Adobe\Reader 9.0\Setup Files\READER9\" to "DataTrace-Pro\Src\3rd Party\Adobe\" terminate the adobe reader installer.
-
-Open **DataTracePro.iss** file with Inno-script studio and compile the script.
-
+### What is "chain rule" in gradient flow?
+  The chain rule can be used to compute the effect of the node on the gradients flowing back from right to left. 
+  
+  Mathematically total output gradient is the total gradient caused by the two things which can be written as:
+  
+    FinalGradient=GradientContribution1+GradientContribution2       
+    Gradient1=GradientInside×GradientContribution1 
+    or
+    ∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1
