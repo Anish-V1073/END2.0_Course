@@ -14,11 +14,11 @@ The learning rate controls how quickly the model is adapted to the problem. A sm
   "Loss" is nothing but a prediction error. This is the difference between the expected output and predicted output.
 
 ### What is "chain rule" in gradient flow?
-  The chain rule can be used to compute the effect of the node on the gradients flowing back from right to left. 
+  The algorithm used to update the model parameters(weights, biases) in order to effectively train a neural network is known as chain rule.
   
-  Mathematically total output gradient is the total gradient caused by the two things which can be written as:
+  Mathematically total output gradient is the total gradient caused by the all the neurons which are contributed for a output:
   
-    FinalGradient=GradientContribution1+GradientContribution2       
+    FinalGradient = GradientContribution**1** + GradientContribution**2**+ GradientContribution**N**       
     Gradient1=GradientInside×GradientContribution1 
     or
     ∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1
