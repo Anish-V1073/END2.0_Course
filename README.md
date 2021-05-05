@@ -10,6 +10,9 @@ The learning rate is a configurable hyperparameter used in the training of neura
 
 The learning rate controls how quickly the model is adapted to the problem. A smaller learning rate requires many updates before reaching the minimum point. Too large of a learning rate causes drastic updates which lead to divergent behaviors. So it is always important to choose optimal learning rate swiftly reaches the minimum point.
 
+### How are weights intialized?
+We can initialize the weights for neural network with differnt techinques such as Zero initialization, Random initialization, He initialization, Xavier initialization based on our network. The selected weight initialization technique should not affect the training purpose.
+
 ### What is "loss" in neural network?
   "Loss" is nothing but a prediction error. This is the difference between the expected output and predicted output.
 
