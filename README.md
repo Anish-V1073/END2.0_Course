@@ -20,5 +20,7 @@ The learning rate controls how quickly the model is adapted to the problem. A sm
     
    FinalGradient = GradientContribution**1** + GradientContribution**2**+ GradientContribution**N**      
    Gradient<sub>i</sub>=GradientInside×GradientContribution<sub>i</sub>
+   
    or
+   
    ∂Output∂wi=∂Contribution1∂wi×∂Output∂Contribution1
