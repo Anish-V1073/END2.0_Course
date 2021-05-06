@@ -1,6 +1,6 @@
 ## Scope
 
-Please find the answers for the assignment 1 of END2.0 course's questions in the below sections.
+Please find the answers for the first assignment questions in the below sections.
 
 ### What is a neural network neuron?
   Neuron is a mathematical operation takes the input and multiply by it's weight and passes the sum to another neuron via activation function.
